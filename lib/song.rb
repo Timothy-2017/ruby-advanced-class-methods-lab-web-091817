@@ -59,7 +59,14 @@ class Song
   end
 
   def self.create_from_filename(filename)
-    s = self.new
+    # s = self.new
+    # filename_arr = filename.split(" - ")
+    # #binding.pry
+    # s.name = filename_arr[1].chop.chop.chop.chop
+    # s.artist_name = filename_arr[0]
+    # s.save
+
+    s = self.create
     filename_arr = filename.split(" - ")
     #binding.pry
     s.name = filename_arr[1].chop.chop.chop.chop
